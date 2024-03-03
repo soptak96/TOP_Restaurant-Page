@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(./tea_bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    
+}
+
+nav button{
+    background-color: transparent;
+    color: aliceblue;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    transition: position 100ms ease-out;
+}
+
+nav button:hover {
+    top: 0px;
+}
+
+nav button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 0;
+    background-color: goldenrod;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+}
+
+nav button:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background: #00000085;
+    padding: 5vh 0;
+    gap: 40px;
+}
+
+#content{
+    border: 2px solid goldenrod;
+    height: 70vh;
+    border-right: 0;
+    border-left: 0;
+    overflow: auto;
+    scrollbar-color: goldenrod white;
+    margin: auto;
+}
+
+.line{
+    width: 40vw;
+    height: 5px;
+    background-color: goldenrod;
+    margin: auto;
+}
+
+#content * {
+    text-align: center;
+    margin: auto;
+}
+
+
+
+#content p {
+    font-size: 1.5rem;
+}
+
+.line-3{
+    width: 20vw;
+    height: 2px;
+    background-color: goldenrod;
+    margin: auto;
+}
+
+.white-bg{
+    background-color: wheat;
+}
+
+#content p {
+    width: 42ch;
+}
+
+#content .about-p{
+    width: 72ch;
+    font-size: 1.3rem;
+    margin-top: 7vh;
+}
+
+#content .line {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#content h1{
+    font-size: 4rem;
+}
+
+#content .menu{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#content .menu * {
+    margin-top: 1vh;
+}
+
+.menu-from-home{
+    background-color: goldenrod;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: auto;
+    padding: 0.5rem 1rem;
+}
+
+.menu-from-home:hover{
+    color: aliceblue;
+}
+
+#content .button-container{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+
+#content #brand_name {
+    margin-top: 10vh;
+    color: wheat;
+}
+
+#content .home-content{
+    color: white;
+}
+
+#content h2{
+    font-size: 3rem;
+}
+
+#content h3{
+    font-size: 1.6rem;
+}
+
+#content .home-p{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+#content p{
+    font-size: 1.3rem;
+}
+
+#content h1{
+    margin-top: 4vh;
+}
+
+a{
+    color: rgb(255, 252, 242);
+    font-weight: bold;
+    margin: auto;
+    text-decoration: none;
+}
+
+#credit{
+    margin-top: 8vh;
+    text-align: center;
+}
